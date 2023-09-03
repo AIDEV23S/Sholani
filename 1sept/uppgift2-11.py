@@ -7,7 +7,7 @@ meterSettingsToday = float(input('Mätarställning idag? '))
 meterSettingsOneYearAgo = float(input('Mätarställning ett år sen? '))
 milesDriven = meterSettingsToday - meterSettingsOneYearAgo
 
-print(f'Antal körda mil: {milesDriven: .0f}')
+print(f'Antal körda mil: {int(milesDriven)}')
 
 litersConsumed = float(input('Antal liter bensin förbrukat? '))
 consumptionPerMile = litersConsumed / milesDriven
