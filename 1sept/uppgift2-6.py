@@ -13,7 +13,7 @@ import math
 # Radioaktivt material - 'n'
 # Mängden raioaktivt material vid tiden t=0 - 'n₀'
 
-# 'e' - Representerar det matematiska konstanta numret som kallas Euler's nummer(2.71828), som ofta betecknas som 'e'.
+# 'e' - Representerar det 10matematiska konstanta numret som kallas Euler's nummer(2.71828), som ofta betecknas som 'e'.
 # math.exp() är en funktion för att beräkna eˣ 
 # Exempel: 'eˣ = math.exp(x)
 
@@ -37,4 +37,4 @@ theDecayConstant = math.log(2) / halfLifeC14
 # Beräkna hur många procent som återstår efter S år med formeln.
 remainingIsotope= math.exp((-theDecayConstant) * yearInput) * 100 # * 100 för att få ut hur mycket av isotopen som är kvar i procent.
 
-print(f'Efter {yearInput} år finns {remainingIsotope: .2f}% kvar av isotopen')
+print(f'Efter {yearInput: .0f} år finns {remainingIsotope: .2f}% kvar av isotopen')
